@@ -91,7 +91,7 @@ Provide a **single source of truth** for crime & arrest analytics across **time,
 
 <img width="491" height="929" alt="image" src="https://github.com/user-attachments/assets/66da3218-b4c5-4e6b-b29f-694163eb450a" />
 
-- Used Python (yDataProfiling) to identify missing values, inconsistencies, and datatype errors.
+- Used Python (yDataProfiling) to identify missing values, inconsistencies, and data type errors.
 - Found issues like missing **LAW_CAT_CD**, inconsistent age group formats, and geolocation gaps
 
 ### 2. Dimensional Modeling
