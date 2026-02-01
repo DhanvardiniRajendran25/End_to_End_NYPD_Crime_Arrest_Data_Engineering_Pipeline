@@ -52,6 +52,8 @@ Provide a **single source of truth** for crime & arrest analytics across **time,
 
 ## 🧭 End-to-End Workflow
 
+<img width="1213" height="507" alt="image" src="https://github.com/user-attachments/assets/139c60ca-6db6-45de-9e3b-e282849ad3db" />
+
 1. **Ingest & Land**
    - Download NYPD Arrest data (YTD) from NYC Open Data.
    - Land in Azure Storage as CSV/TSV.
@@ -84,14 +86,18 @@ Provide a **single source of truth** for crime & arrest analytics across **time,
 
 ## 🧩 Project Workflow
 
-<img width="468" height="860" alt="image" src="https://github.com/user-attachments/assets/93465606-35ac-4e1b-8732-1a027eb644df" />
-
 
 ### 1. Data Profiling
+
+<img width="491" height="929" alt="image" src="https://github.com/user-attachments/assets/66da3218-b4c5-4e6b-b29f-694163eb450a" />
+
 - Used Python (yDataProfiling) to identify missing values, inconsistencies, and datatype errors.
 - Found issues like missing **LAW_CAT_CD**, inconsistent age group formats, and geolocation gaps
 
 ### 2. Dimensional Modeling
+
+<img width="940" height="527" alt="image" src="https://github.com/user-attachments/assets/4329edad-893d-4c88-a033-d1a3368816b9" />
+
 - Designed a **Star Schema** in ER Studio:
   - Fact: `FACT_ARRESTS` (one record per arrest event, grain = arrest key)
   - Dimensions:
@@ -103,6 +109,9 @@ Provide a **single source of truth** for crime & arrest analytics across **time,
     - `DIM_PERPETRATOR` (SCD Type 2)
 
 ### 3. Data Cleaning & Transformation
+
+<img width="940" height="552" alt="image" src="https://github.com/user-attachments/assets/d4446f2e-919d-4871-ac14-fb7aec26a190" />
+
 - Built Alteryx workflows to:
   - Standardize borough codes
   - Handle missing values
@@ -110,12 +119,18 @@ Provide a **single source of truth** for crime & arrest analytics across **time,
   - Convert dates into usable formats (day/week/month/year)
 
 ### 4. Pipeline Orchestration
+
+<img width="940" height="426" alt="image" src="https://github.com/user-attachments/assets/cd58c676-ebb6-4e48-aa57-5882713ccf7b" />
+
 - Implemented **Azure Data Factory** pipeline:
   - Incremental loads into Snowflake
   - Parameterized pipelines for reusability
   - Error handling and monitoring
 
 ### 5. Cloud Data Warehouse
+
+<img width="940" height="463" alt="image" src="https://github.com/user-attachments/assets/c28b11b5-cc6f-4fe8-a0cc-4f1c08d6d814" />
+
 - Snowflake stores:
   - Arrest fact table
   - Dimension tables
@@ -123,7 +138,7 @@ Provide a **single source of truth** for crime & arrest analytics across **time,
 
 ### 6. Visualization
 
-<img width="1397" height="761" alt="image" src="https://github.com/user-attachments/assets/4f68c17e-efe6-46ef-9b12-e6752358d958" />
+<img width="2099" height="1139" alt="NYPD ARRESTS DASHBOARD" src="https://github.com/user-attachments/assets/d5df6620-4b22-45b8-9ad7-948200b4c990" />
 
 - Built **interactive dashboards** (Power BI/Tableau) to analyze:
   - Time-based patterns (daily, weekly, monthly, yearly trends)
