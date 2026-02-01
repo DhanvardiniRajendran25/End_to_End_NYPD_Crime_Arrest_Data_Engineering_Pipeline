@@ -123,7 +123,7 @@ Provide a **single source of truth** for crime & arrest analytics across **time,
 
 ### 6. Visualization
 
-<img width="1203" height="649" alt="image" src="https://github.com/user-attachments/assets/5ae4b874-cc3d-4f8f-84b8-69f516c26544" />
+<img width="1397" height="761" alt="image" src="https://github.com/user-attachments/assets/4f68c17e-efe6-46ef-9b12-e6752358d958" />
 
 - Built **interactive dashboards** (Power BI/Tableau) to analyze:
   - Time-based patterns (daily, weekly, monthly, yearly trends)
