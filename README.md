@@ -1,4 +1,4 @@
-# End-to-End NYPD Crime Arrest Data Engineering Pipeline
+# ⛓️ End-to-End NYPD Crime Arrest Data Engineering Pipeline
 
 ## 📌 Overview
 This project focuses on building a **scalable end-to-end data pipeline** for NYPD Arrest and Crime Data.  
